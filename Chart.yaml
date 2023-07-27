@@ -1,0 +1,6 @@
+apiVersion: v2
+name: blindfoldedsurgery-website
+description: redirects to the github org for BlindfoldedSurgery
+type: application
+version: 1.0.0
+appVersion: "1.0.0"

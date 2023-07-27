@@ -1,0 +1,17 @@
+namespace:
+  name: blindfoldedsurgery
+
+ingress:
+  name: blindfoldedsurgery
+  hosts:
+    - name: blindfolded.surgery
+  secret: tls-blindfoldedsurgery
+  issuer: letsencrypt-issuer
+  customAnnotations:
+    nginx.ingress.kubernetes.io/server-snippet: |
+      return 301 https://github.com/BlindfoldedSurgery/;
+
+service:
+  name: blindfoldedsurgery
+  port: 80
+  externalName: noop
