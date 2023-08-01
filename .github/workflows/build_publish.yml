@@ -12,12 +12,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: OpenAlcoholics/github-action-helm@v0.2.0
+      - uses: OpenAlcoholics/github-action-helm@v0.3.0
         with:
           subcommand: lint
           path: .
           namespace: blindfoldedsurgery
-      - uses: OpenAlcoholics/github-action-helm@v0.2.0
+      - uses: OpenAlcoholics/github-action-helm@v0.3.0
         with:
           subcommand: lint
           path: .
