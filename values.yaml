@@ -14,4 +14,4 @@ ingress:
 service:
   name: blindfoldedsurgery
   port: 80
-  externalName: noop
+  externalName: blindfolded.surgery
