@@ -12,12 +12,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: OpenAlcoholics/github-action-helm@v0.2.0
+      - uses: OpenAlcoholics/github-action-helm@v0.3.0
         with:
           subcommand: lint
           path: .
           namespace: blindfoldedsurgery
-      - uses: OpenAlcoholics/github-action-helm@v0.2.0
+      - uses: OpenAlcoholics/github-action-helm@v0.3.0
         with:
           subcommand: lint
           path: .
@@ -31,7 +31,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: install helm chart
-        uses: BlindfoldedSurgery/github-action-helm@v0.2.0
+        uses: BlindfoldedSurgery/github-action-helm@v0.3.0
         with:
           subcommand: upgrade
           release_name: website
